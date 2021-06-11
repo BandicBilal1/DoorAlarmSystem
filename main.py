@@ -21,7 +21,7 @@ def main():
             breach_time = datetime.utcnow().isoformat()
 
             if not is_email_sent:
-                send_gmail("bandic.bilal.eng@gmail.com", os.environ.get("GMAIL_PASSWORD"), "emir.hodzich@gmail.com", "Intrusion detected!!!!!!!", f"Breach made at: {breach_time}")
+                send_gmail("bandic.bilal.eng@gmail.com", os.environ.get("GMAIL_PASSWORD"), "haruns97hs@gmail.com", "Intrusion detected!!!!!!!", f"Breach made at: {breach_time}")
                 is_email_sent = True
 
 

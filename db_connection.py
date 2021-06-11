@@ -1,7 +1,8 @@
+from __future__ import annotations
 from firebase_admin import credentials
 from firebase_admin import db
 import firebase_admin
-import json
+from typing import List
 
 class DatabaseConnection:
     def save(self, time_stamp):
@@ -11,4 +12,6 @@ class DatabaseConnection:
         ref = db.reference(f'/intrusions')
         json_timestamp = {"Timestamp":f"{time_stamp}"}
         ref.push(json_timestamp)
+
+   
 
